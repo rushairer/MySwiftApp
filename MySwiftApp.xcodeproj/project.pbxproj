@@ -91,6 +91,8 @@
 		C79A776524A731680070D9B8 /* ProfileSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A776324A731680070D9B8 /* ProfileSummary.swift */; };
 		C79A776724A732B40070D9B8 /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A776624A732B40070D9B8 /* HikeBadge.swift */; };
 		C79A776824A732B40070D9B8 /* HikeBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A776624A732B40070D9B8 /* HikeBadge.swift */; };
+		C79A776A24A7445C0070D9B8 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A776924A7445C0070D9B8 /* ProfileEditor.swift */; };
+		C79A776B24A7445C0070D9B8 /* ProfileEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A776924A7445C0070D9B8 /* ProfileEditor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +166,7 @@
 		C79A776024A72AF20070D9B8 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		C79A776324A731680070D9B8 /* ProfileSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSummary.swift; sourceTree = "<group>"; };
 		C79A776624A732B40070D9B8 /* HikeBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikeBadge.swift; sourceTree = "<group>"; };
+		C79A776924A7445C0070D9B8 /* ProfileEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -325,6 +328,7 @@
 				C79A775A24A7296E0070D9B8 /* DraggableView.swift */,
 				C79A776324A731680070D9B8 /* ProfileSummary.swift */,
 				C79A776624A732B40070D9B8 /* HikeBadge.swift */,
+				C79A776924A7445C0070D9B8 /* ProfileEditor.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -544,6 +548,7 @@
 				C79A776424A731680070D9B8 /* ProfileSummary.swift in Sources */,
 				C74702AC24A6297F00D0E9DA /* Landmark.swift in Sources */,
 				C79A774624A6F7BD0070D9B8 /* HikeGraph.swift in Sources */,
+				C79A776A24A7445C0070D9B8 /* ProfileEditor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -577,6 +582,7 @@
 				C79A776524A731680070D9B8 /* ProfileSummary.swift in Sources */,
 				C74702AD24A6297F00D0E9DA /* Landmark.swift in Sources */,
 				C79A774724A6F7BD0070D9B8 /* HikeGraph.swift in Sources */,
+				C79A776B24A7445C0070D9B8 /* ProfileEditor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
