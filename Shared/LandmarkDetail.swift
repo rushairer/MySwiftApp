@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    @EnvironmentObject var userData: UserData
     var landmark: Landmark
 
+    var landmarkIndex: Int {
+        userData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+    }
+    
     var body: some View {
         VStack {
             MapView(coordinate: landmark.locationCoordinate)
@@ -19,11 +24,23 @@ struct LandmarkDetail: View {
                 .offset(y: -140)
                 .padding(.bottom, -140)
             VStack(alignment: .leading) {
-                Text(landmark.name)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.ultraLight/*@END_MENU_TOKEN@*/)
-                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
-                    .font(.largeTitle)
-                
+                HStack {
+                    Text(landmark.name)
+                        .fontWeight(/*@START_MENU_TOKEN@*/.ultraLight/*@END_MENU_TOKEN@*/)
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                        .font(.largeTitle)
+                    Button(action: {
+                        self.userData.landmarks[self.landmarkIndex].isFavorite.toggle()
+                    }) {
+                        if self.userData.landmarks[self.landmarkIndex].isFavorite {
+                            Image(systemName: "star.fill")
+                                .foregroundColor(Color.yellow)
+                        } else {
+                            Image(systemName: "star")
+                                .foregroundColor(Color.gray)
+                        }
+                    }
+                }
                 HStack(alignment: .top) {
                     Text(landmark.park)
                         .font(.subheadline)
@@ -44,5 +61,6 @@ struct LandmarkDetail: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         LandmarkDetail(landmark: landmarkData[0])
+            .environmentObject(UserData())
     }
 }

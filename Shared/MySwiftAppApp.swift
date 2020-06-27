@@ -11,9 +11,8 @@ import SwiftUI
 struct MySwiftAppApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationView {
-                LandmarkList()
-            }
+            CategoryHome()
+            .environmentObject(UserData())
         }
     }
 }
