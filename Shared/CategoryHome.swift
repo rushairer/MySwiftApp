@@ -39,11 +39,13 @@ struct CategoryHome: View {
                     .frame(height: 200)
                     .clipped()
                     .listRowInsets(EdgeInsets())
+                PageView(features.map { FeatureCard(landmark: $0) })
+                    .aspectRatio(3/2, contentMode: .fit)
                 ForEach(categories.keys.sorted(), id: \.self) { key in
                     CategoryRow(categoryName: key, items: self.categories[key]!)
                 }
                 .listRowInsets(EdgeInsets())
-                NavigationLink(destination: LandmarkList()) {
+                NavigationLink(destination: LandmarkList { LandmarkDetail(landmark: $0) }) {
                     Text("See All")
                 }
             }
