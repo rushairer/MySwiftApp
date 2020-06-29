@@ -56,8 +56,10 @@
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "8"
       notificationPayloadFile = "watchOS Extension/PushNotificationPayload.apns">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/MySwiftApp">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C743A46E24A75F9B00AB5C36"
@@ -65,7 +67,7 @@
             BlueprintName = "watchOS"
             ReferencedContainer = "container:MySwiftApp.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -75,8 +77,10 @@
       debugDocumentVersioning = "YES"
       launchAutomaticallySubstyle = "8"
       notificationPayloadFile = "watchOS Extension/PushNotificationPayload.apns">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel"
+         RemotePath = "/MySwiftApp">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C743A46E24A75F9B00AB5C36"
@@ -84,7 +88,16 @@
             BlueprintName = "watchOS"
             ReferencedContainer = "container:MySwiftApp.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "C743A46E24A75F9B00AB5C36"
+            BuildableName = "watchOS.app"
+            BlueprintName = "watchOS"
+            ReferencedContainer = "container:MySwiftApp.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

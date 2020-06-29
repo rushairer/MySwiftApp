@@ -58,7 +58,7 @@ struct LandmarkDetail: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
         LandmarkDetail(landmark: landmarkData[0])
             .environmentObject(UserData())

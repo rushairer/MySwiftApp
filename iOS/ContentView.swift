@@ -1,16 +1,17 @@
 //
 //  ContentView.swift
-//  watchOS Extension
+//  iOS
 //
-//  Created by Abenx on 2020/6/27.
+//  Created by Abenx on 2020/6/28.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var userData: UserData
+
     var body: some View {
-        LandmarkList { LandmarkDetail(landmark: $0) }
-            .environmentObject(UserData())
+        CategoryHome()
     }
 }
 

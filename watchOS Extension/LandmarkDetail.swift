@@ -1,5 +1,5 @@
 //
-//  WatchLandmarkDetail.swift
+//  LandmarkDetail.swift
 //  watchOS Extension
 //
 //  Created by Abenx on 2020/6/27.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct WatchLandmarkDetail: View {
+struct LandmarkDetail: View {
     @EnvironmentObject var userData: UserData
 
     var landmark: Landmark
@@ -53,11 +53,11 @@ struct WatchLandmarkDetail: View {
     }
 }
 
-struct WatchLandmarkDetail_Previews: PreviewProvider {
+struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["Apple Watch Series 5 - 44mm", "Apple Watch Series 5 - 40mm"], id: \.self) { deviceName in
             let userData = UserData()
-            WatchLandmarkDetail(landmark: userData.landmarks[0])
+            LandmarkDetail(landmark: userData.landmarks[0])
                 .environmentObject(userData)
             .previewDevice(PreviewDevice(rawValue: deviceName))
             .previewDisplayName(deviceName)
