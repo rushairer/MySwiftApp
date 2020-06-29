@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -45,7 +45,7 @@
 		C743A48424A75F9E00AB5C36 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C743A48324A75F9E00AB5C36 /* NotificationView.swift */; };
 		C743A48624A75F9E00AB5C36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C743A48524A75F9E00AB5C36 /* Assets.xcassets */; };
 		C743A48924A75F9E00AB5C36 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C743A48824A75F9E00AB5C36 /* Preview Assets.xcassets */; };
-		C743A48E24A75F9E00AB5C36 /* watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C743A46F24A75F9B00AB5C36 /* watchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C743A48E24A75F9E00AB5C36 /* watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = C743A46F24A75F9B00AB5C36 /* watchOS.app */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C743A49724A7605D00AB5C36 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74702A124A6297F00D0E9DA /* Landmark.swift */; };
 		C743A49824A7605D00AB5C36 /* Hike.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A773F24A6F65E0070D9B8 /* Hike.swift */; };
 		C743A49924A7605D00AB5C36 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79A776024A72AF20070D9B8 /* Profile.swift */; };
@@ -917,6 +917,7 @@
 		};
 		C743A48D24A75F9E00AB5C36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			platformFilter = ios;
 			target = C743A46E24A75F9B00AB5C36 /* watchOS */;
 			targetProxy = C743A48C24A75F9E00AB5C36 /* PBXContainerItemProxy */;
 		};
@@ -1152,7 +1153,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.aben.MySwiftApp;
 				PRODUCT_NAME = MySwiftApp;
 				SDKROOT = iphoneos;
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1176,7 +1177,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = io.aben.MySwiftApp;
 				PRODUCT_NAME = MySwiftApp;
 				SDKROOT = iphoneos;
-				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
